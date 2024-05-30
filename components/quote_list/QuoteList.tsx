@@ -16,6 +16,7 @@ const QuoteList = () => {
         <section className="flex flex-col gap-4">
             {quotes.map((quote) => (
                 <QuoteContainer
+                    key={quote._id}
                     author={quote.author}
                     quote={quote.quote}
                     reacted={false}
